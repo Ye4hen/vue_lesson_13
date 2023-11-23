@@ -1,0 +1,249 @@
+*,
+*::before,
+*::after{
+padding: 0;
+margin: 0;
+border: 0;
+box-sizing: inherit;
+}
+html{
+font-size:100%;
+box-sizing:border-box;
+}
+body{
+padding: 0;
+margin: 0;
+line-height: 1;
+font-size: 1rem;
+color:#000;
+background:#fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+margin-top: 0;
+margin-bottom: 0;
+font-size: inherit;
+font-weight: inherit;
+}
+a,
+a:visited,
+a:active{
+text-decoration: none;
+}
+ul,
+ol,
+li{
+list-style: none;
+}
+img{
+vertical-align: top;
+}
+a,
+button,
+svg{
+cursor: pointer;
+}
+select, input{
+	border: 1px solid #000;
+}
+
+
+/*===========================================================================================*/
+
+.title {
+	font-size: 35px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.subtitle{
+	font-size: 30px;
+	font-weight: 600;	
+}
+
+.button {
+	color: #000;
+	background-color: transparent;
+	border: 1px solid #000;
+	padding: 10px;
+	text-align: center;
+	font-size: 20px;
+	transition: all 0.3s;
+	@media(any-hover:hover){
+		&:hover{
+			color: #fff;
+			background-color: #000;
+		}
+	}
+}
+
+.err-msg {
+	color: red;
+	font-size: 20px;
+	font-weight: 700;
+	margin-top: 20px;
+}
+
+.not-found{
+	display: grid;
+	gap: 20px;
+	justify-content: center;
+	text-align: center;
+}
+
+.home{
+	text-align: center;
+	font-size: 20px;
+	display: grid;
+	gap: 15px;
+}
+
+.step{
+	color:crimson;
+}
+
+.container{
+	margin: 0 auto;
+	padding: 0px 15px;
+	max-width: 1000px;
+}
+
+.info{
+	font-weight: 700;
+	font-size: 18px;
+}
+
+/*===========================================================================================*/
+
+.login {
+	display: grid;
+	justify-content: center;
+	&__title {}
+
+	&__form {
+		display: grid;
+		margin-top: 30px;
+	}
+
+	&__item {
+		&:not(:last-child){
+			margin-bottom: 15px;
+		}
+		label{
+			display: grid;
+			gap: 5px;
+			font-size: 18px;
+		}
+	}
+
+	&__component{
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+
+	&__btn {
+		padding: 5px 10px;
+		font-size: 16px;
+		// background-color: transparent;
+	}
+}
+
+.lesson {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&__list {
+		font-size: 25px;
+		font-weight: 700;
+		&:not(:last-child){
+			margin-bottom: 30px;
+		}
+	}
+
+	&__item {
+		font-weight: 400;
+		font-size: 16px;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		&:not(:last-child){
+			margin-bottom: 15px;
+		}
+		&:first-child{
+			margin-top: 20px;
+		}
+	}
+
+	&__name {}
+
+	&__button {}
+}
+
+.asgn__item{
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	justify-self: end;
+	&:not(:last-child){
+		margin-bottom: 15px;
+	}
+}
+
+.asgn{
+	display: grid;
+	justify-content: center;
+	text-align: center;
+}
+
+.teachers, .lessons {
+	display: grid;
+	&__cont{
+		display: grid;
+		gap: 10px;
+		justify-content: center;
+	}
+
+	&__list {
+		display: grid;
+		gap: 20px;
+		justify-content: center;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&__name {}
+
+	&__exp {}
+
+	&__btns {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&__btn {
+		
+	}
+}
+
+
+.create{
+	margin-top: 20px;
+}
